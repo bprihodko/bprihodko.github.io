@@ -40,27 +40,71 @@ body {
 .col-md-6 {
     width: 50%;
 }
-.menu li {
+.menu > li {
     width: 25%;
     float: left;
     border-left: 1px solid #2c71b8;
+    position: relative;
+}
+.menu > li > a {
+    text-align: center;
 }
 .menu > li:last-child {
     border-right:1px solid #2c71b8;
 }
-.menu a {
+.menu  a {
     text-decoration: none;
     display: block;
     height: 50px;
-    text-align: center;
     line-height: 50px;
     font-size: 21px;
     color:#2c71b8;
 }
-.menu a:hover {
-    color: White;
-    background:#2c71b8 ;
+.menu > li:hover > a {
+    color: white;
+    background:#2c71b8;
+  
 }
+.menu .sign:after {
+    content: "\f107";
+    font-family: "FontAwesome";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 118px;
+}
+.menu > li:hover > .submenu {
+   visibility: visible;
+   opacity: 1;
+}
+.menu > li:hover >  ul.submenu + a {
+     text-decoration: underline;
+}
+
+.submenu {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 1s linear;
+    position: absolute;
+    left: -1px;
+    top: 49px;
+    
+}
+
+.menu .submenu a {
+    color: white;
+    background-color: #2c71b8;
+    white-space: nowrap;
+    padding: 0 31px;
+}
+
+.submenu li:hover a {
+    background:  #ffffff;
+    color: #2c71b8;
+}
+
+   
+
 form {
     float: left;
     position: relative;
@@ -101,6 +145,7 @@ form {
     height: 20px;
     margin-left: 8px;
     margin-top: 10px;
+    background-image: url(image/cart.png);
 }
 
 .product-count {
