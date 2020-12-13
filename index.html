@@ -61,34 +61,46 @@
         <div class="col-md-3">
 
           <div class="barsite">
-            <form>
+            <form action="">
               <div class="type">
                 <h3 class=choose>DEVICE TYPE</h3>
-                <div class="type1">
-                  <input type="checkbox" name="device" value="Laptop">Laptop
-                  <input type="checkbox" name="device" value="Tablet">Tablet
-                </div>
+                  <input class="check" type="checkbox" name="device" value="Laptop" id="t1">
+                  <label for="t1">Laptop</label>
+                  <input  class="check" type="checkbox" name="device" value="Tablet" id="t2">
+                  <label for="t2">Tablet</label>
               </div>
-              <div class="color">
+              <div class="feature">
                 <h3 class=choose>COLOR</h3>
-                <input type="checkbox" name="color" value="Black">Black
-                <input type="checkbox" name="color" value="Red">Red
-                <input type="checkbox" name="color" value="Green">Green
-                <input type="checkbox" name="color" value="Blue">Blue
-                <input type="checkbox" name="color" value="Orange">Orange
+                <input  class="check" type="checkbox" name="color" value="Black" id="c1">
+                <label for="c1">Black</label>
+                <input  class="check" type="checkbox" name="color" value="Red" id="c2">
+                <label for="c2">Red</label>
+                <input class="check" type="checkbox" name="color" value="Green" id="c3">
+                <label for="c3">Green</label>
+                <input class="check"  type="checkbox" name="color" value="Blue" id="c4">
+                <label for="c4">Blue</label>
+                <input class="check" type="checkbox" name="color" value="Orange" id="c5">
+                <label for="c5">Orange</label>
               </div>
-              <div class="RAM">
-                <h3 class=choose>COLOR</h3>
-                <input type="checkbox" name="ram" value="1 GB">1 GB
-                <input type="checkbox" name="ram" value="2 GB">2 GB
-                <input type="checkbox" name="ram" value="4 GB">4 GB
-                <input type="checkbox" name="ram" value="6 GB">6 GB
-                <input type="checkbox" name="ram" value="8 GB">8 GB
+              <div class="feature">
+                <h3 class=choose>RAM</h3>
+                <input class="check" type="checkbox" name="ram" value="1 GB" id="r1">
+                <label for="r1">1 GB</label>
+                <input class="check" type="checkbox" name="ram" value="2 GB" id="r2">
+                <label for="r2">2 GB</label>
+                <input class="check" type="checkbox" name="ram" value="4 GB" id="r3">
+                <label for="r3">4 GB</label>
+                <input  class="check"type="checkbox" name="ram" value="6 GB" id="r4">
+                <label for="r4">6 GB</label>
+                <input class="check" type="checkbox" name="ram" value="8 GB" id="r5">
+                <label for="r5">8 GB</label>
               </div>
-              <h3 class=choose>Show more options ...</h3>
-              <div class="chsubmit">
-                <input class=submitch type="submit" value="SUBMIT">
+              <div class="show">
+                <a href="">Show more options ... </a>
               </div>
+  
+                <input class=filter-submit type="submit" value="SUBMIT">
+  
             </form>
           </div>
         </div>
@@ -313,12 +325,26 @@
               </div>
             </div>
           </div>
+          <div class="col-md-12">
+            <div class="load">
+              <a href="">Load more... </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    </div>
   </main>
-  <footer class="foooter">Footer</footer>
-
+  <footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="end">
+        <a href="">&copy; Copyright 2017</a>
+        </div>
+        </div>
+        </div>
+        </div>
+        </footer>
 </body>
-
 </html>
