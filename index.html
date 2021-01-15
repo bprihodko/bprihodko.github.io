@@ -48,7 +48,7 @@
           <div class="cart-widget">
             <div class="cart">
               <img src="image/cart.png">
-              <div class="product-count">4</div>
+              <div class="product-count" id="products-count">0</div>
             </div>
           </div>
         </div>
@@ -64,20 +64,20 @@
             <form action="">
               <div class="type">
                 <h3 class=choose>DEVICE TYPE</h3>
-                  <input class="check" type="checkbox" name="device" value="Laptop" id="t1">
-                  <label for="t1">Laptop</label>
-                  <input  class="check" type="checkbox" name="device" value="Tablet" id="t2">
-                  <label for="t2">Tablet</label>
+                <input class="check" type="checkbox" name="device" value="Laptop" id="t1">
+                <label for="t1">Laptop</label>
+                <input class="check" type="checkbox" name="device" value="Tablet" id="t2">
+                <label for="t2">Tablet</label>
               </div>
               <div class="feature">
                 <h3 class=choose>COLOR</h3>
-                <input  class="check" type="checkbox" name="color" value="Black" id="c1">
+                <input class="check" type="checkbox" name="color" value="Black" id="c1">
                 <label for="c1">Black</label>
-                <input  class="check" type="checkbox" name="color" value="Red" id="c2">
+                <input class="check" type="checkbox" name="color" value="Red" id="c2">
                 <label for="c2">Red</label>
                 <input class="check" type="checkbox" name="color" value="Green" id="c3">
                 <label for="c3">Green</label>
-                <input class="check"  type="checkbox" name="color" value="Blue" id="c4">
+                <input class="check" type="checkbox" name="color" value="Blue" id="c4">
                 <label for="c4">Blue</label>
                 <input class="check" type="checkbox" name="color" value="Orange" id="c5">
                 <label for="c5">Orange</label>
@@ -90,7 +90,7 @@
                 <label for="r2">2 GB</label>
                 <input class="check" type="checkbox" name="ram" value="4 GB" id="r3">
                 <label for="r3">4 GB</label>
-                <input  class="check"type="checkbox" name="ram" value="6 GB" id="r4">
+                <input class="check" type="checkbox" name="ram" value="6 GB" id="r4">
                 <label for="r4">6 GB</label>
                 <input class="check" type="checkbox" name="ram" value="8 GB" id="r5">
                 <label for="r5">8 GB</label>
@@ -98,9 +98,9 @@
               <div class="show">
                 <a href="">Show more options ... </a>
               </div>
-  
-                <input class=filter-submit type="submit" value="SUBMIT">
-  
+
+              <input class=filter-submit type="submit" value="SUBMIT">
+
             </form>
           </div>
         </div>
@@ -336,15 +336,33 @@
     </div>
   </main>
   <footer class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="end">
-        <a href="">&copy; Copyright 2017</a>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="end">
+            <a href="">&copy; Copyright 2017</a>
+          </div>
         </div>
-        </div>
-        </div>
-        </div>
-        </footer>
+      </div>
+    </div>
+  </footer>
+  <div class="modal">
+    <div class="modal-block">
+      <form action="">
+        <div class="btn-close">X</div>
+        <h3>Please call for more details</h3>
+        <div class="form-fields"><input type="text" placeholder="Your name"></div>
+        <div class="form-fields"><input type="text" placeholder="Your name"></div>
+        <button>Please call</button>
+      </form>
+    </div>
+  </div>
+
+
+
+
+
+  <script src="app.js"></script>
 </body>
+
 </html>
