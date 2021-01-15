@@ -63,6 +63,6 @@ let likeEl = document.querySelectorAll(".like");
 console.log(likeEl);
 likeEl.forEach((like) => {
     like.addEventListener('click', function () {
-        like.classList.add("like-enable");
-    })
+        like.classList.toggle("like-enable");        
+})
 })
