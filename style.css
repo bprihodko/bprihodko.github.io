@@ -9,6 +9,11 @@ body {
     padding: 25px 0;
     background-color: rgba(255, 255, 255, 0.75);
 }
+.slider {
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.2);
+}
+
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -249,15 +254,16 @@ body {
 .fullscrenn-inner {
      background-image: url('image/icon (8).png');
 }
-.fullscreen:hover, .like:hover {
+.fullscreen:hover, .like:hover, .like-enable  {
     background:#2c71b8 ;
     cursor: pointer;
 }
 .fullscreen:hover .fullscrenn-inner {
     background-image: url('image/icon (6).png');
 }
-.like:hover .like-inner{
-    background-image: url('image/icon (7).png');  
+.like:hover .like-inner, .like-enable .like-inner  {
+    background-image: url('image/icon (7).png');
+    background-repeat: no-repeat;  
 }
 .price {
   color: white;
@@ -416,11 +422,66 @@ border: 1px solid grey;
     display: block;
 }
     
-.like-enable {
-    background:#2c71b8 ;
-    cursor: pointer;
+.quantity-count, .quantity-count input {
+    text-align: center;
 }
-.like-enable .like-inner {
-    background-image: url('image/icon (7).png'); 
-    background-repeat: no-repeat;
+.quantity-count button {
+    padding: 3px 8px;
+}
+
+.slider-block > div {
+    padding-top: 160px;
+    padding-bottom: 140px;
+    text-align: center;
+    font-size: 100px;
+    color: white;
+    margin-top: 25px;
+}
+.slick-dots {
+    bottom: 15px;
+}
+
+.slick-dotted.slick-slider {
+     margin-bottom: 0px; 
+}
+
+
+button.slick-prev.slick-arrow {
+background-image: url(image/arrow-left.png);
+background-repeat: no-repeat;
+}
+
+.slick-prev, .slick-next {
+      width: 32px;
+    height: 61px;
+ }
+ .slick-prev:before, .slick-next:before  {
+    content: unset;
+ }
+ button.slick-next.slick-arrow {
+background-image: url(image/arrow-right.png);
+background-repeat: no-repeat;
+}
+.slick-dots li button:before {
+    width: 10px;
+    height: 10px;
+    content: ' ';
+    border: 1px solid white;
+}
+.slick-dots li.slick-active button:before {
+      background: white;
+}
+.slick-dots li:not('slick-active') button:before {
+    background: transparent;
+}
+
+.slick-dots li button:hover::before {
+      background: white;
+
+}
+    .slick-dots li button {
+    width: 10px;
+    height: 10px;
+    background: #235a93;
+    border: 1px solid white;
 }
